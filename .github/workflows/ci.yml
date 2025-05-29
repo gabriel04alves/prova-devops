@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip"
-      - run: pip install -r requirements.txt
+      - run: pip install -r app/requirements.txt
       - run: pytest
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
