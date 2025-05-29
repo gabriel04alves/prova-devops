@@ -6,7 +6,7 @@ def read_root():
 
 @app.get("/square/{x}")
 def square(x: int):
-    return {"result": x + x}
+    return {"result": x ** 2}
 
 @app.get("/double/{x}")
 def double(x: int):
